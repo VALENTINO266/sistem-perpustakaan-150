@@ -1,0 +1,8 @@
+{
+  "/dashboard/page": "app/dashboard/page.js",
+  "/buku/page": "app/buku/page.js",
+  "/transaksi/pinjam/page": "app/transaksi/pinjam/page.js",
+  "/siswa/page": "app/siswa/page.js",
+  "/kategori/page": "app/kategori/page.js",
+  "/transaksi/kembali/page": "app/transaksi/kembali/page.js"
+}
