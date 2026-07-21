@@ -7,6 +7,14 @@ Sistem Informasi Perpustakaan SDN 150 OKU wajib dibangun untuk mendigitalkan pro
 1. **Petugas Perpustakaan**: Pengguna dengan hak akses penuh yang wajib melakukan login (username dan password) untuk mengelola data buku, menginput transaksi peminjaman dan pengembalian, serta memantau (monitoring) aktivitas perpustakaan.
 2. **Siswa**: Pengguna layanan perpustakaan yang datanya dicatat dalam sistem untuk keperluan pencarian data buku dan melihat riwayat peminjaman.
 
+## Stakeholder
+
+| Stakeholder | Peran | Kepentingan |
+|-------------|-------|-------------|
+| Petugas Perpustakaan | Pengguna utama sistem | Mengelola data buku, data siswa, transaksi peminjaman, dan pengembalian buku. |
+| Siswa | Pengguna layanan perpustakaan | Memanfaatkan layanan perpustakaan dan memiliki riwayat peminjaman yang tercatat dalam sistem. |
+| SDN 150 OKU | Pemilik sistem | Mendukung digitalisasi pengelolaan perpustakaan agar proses administrasi menjadi lebih efektif. |
+
 ## Tech Stack
 * **Frontend**: React.js / Next.js (Wajib mengimplementasikan antarmuka responsif).
 * **Backend**: Node.js dengan Express.js.
