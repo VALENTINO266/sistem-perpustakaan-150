@@ -30,10 +30,15 @@ Perpustakaan SDN 150 OKU adalah aplikasi manajemen perpustakaan berbasis web yan
 
 ## Struktur Repository
 sistem-perpustakaan-150/
+
 |--- backend/
+
 |--- frontend/
+
 |--- docs/
+
 |--- database_sdn150.sql
+
 |--- README.md
 
 ## Dokumentasi
