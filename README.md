@@ -77,6 +77,6 @@ http://localhost:3000
 
 ## Tautan Penting
 - **Deployment**
-  http://localhost:3000/dashboard (link deploy)
+  https://perpustakaan-sdn150.vercel.app/login
 - **Repository GitHub**
   https://github.com/VALENTINO266/sistem-perpustakaan-150
