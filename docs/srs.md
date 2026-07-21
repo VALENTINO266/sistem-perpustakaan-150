@@ -30,13 +30,50 @@ Sistem wajib memiliki fitur-fitur berikut:
 6. **Transaksi Peminjaman & Pengembalian**: Sistem wajib mencatat ID Pinjam, Tanggal Pinjam, Tanggal Kembali, serta mengintegrasikannya dengan ID Siswa dan ID Buku.
 7. **Riwayat & Monitoring**: Sistem wajib menampilkan riwayat peminjaman buku untuk siswa dan dasbor pemantauan transaksi untuk petugas.
 
+## Functional Requirements
+
+| ID | Functional Requirement |
+|----|-------------------------|
+| FR-01 | Sistem harus menyediakan fitur login bagi petugas menggunakan username dan password. |
+| FR-02 | Sistem harus menyediakan pengelolaan kategori dan subkategori buku. |
+| FR-03 | Sistem harus menyediakan pengelolaan data buku. |
+| FR-04 | Sistem harus menyediakan pengelolaan data siswa. |
+| FR-05 | Sistem harus melakukan pengecekan stok sebelum proses peminjaman dilakukan. |
+| FR-06 | Sistem harus mencatat transaksi peminjaman buku. |
+| FR-07 | Sistem harus mencatat transaksi pengembalian buku. |
+| FR-08 | Sistem harus menampilkan riwayat peminjaman siswa. |
+| FR-09 | Sistem harus menampilkan dashboard monitoring perpustakaan. |
+
 ## Out-of-Scope Features
 Sistem dilarang menyertakan fitur berikut:
 1. Sistem pendaftaran mandiri (registrasi) untuk Siswa. Semua data siswa hanya boleh diinput oleh Petugas Perpustakaan.
 2. Integrasi denda keterlambatan uang digital (tidak ada perhitungan denda di dalam spesifikasi).
 
+## Non Functional Requirements
+
+| ID | Requirement |
+|----|-------------|
+| NFR-01 | Sistem dapat diakses melalui browser modern. |
+| NFR-02 | Antarmuka sistem bersifat responsif. |
+| NFR-03 | Sistem menggunakan PostgreSQL sebagai basis data. |
+| NFR-04 | Sistem menggunakan autentikasi login untuk membatasi akses pengguna. |
+| NFR-05 | Sistem dikembangkan menggunakan Next.js dan Express.js. |
+
 ## Business Rules
-1. Satu kategori buku dapat memiliki dan menaungi banyak buku.
-2. Satu siswa diizinkan untuk melakukan banyak transaksi peminjaman.
-3. Satu buku dapat dipinjam beberapa kali dalam waktu yang berbeda (riwayat berkelanjutan).
-4. Transaksi peminjaman hanya boleh dilakukan jika atribut stok pada Class Buku lebih dari 0.
+
+1. Satu kategori dapat memiliki banyak buku.
+
+2. Satu siswa dapat melakukan lebih dari satu transaksi peminjaman.
+
+3. Satu buku dapat dipinjam berkali-kali pada waktu yang berbeda.
+
+4. Transaksi peminjaman hanya dapat dilakukan apabila stok buku masih tersedia.
+
+5. Status transaksi berubah menjadi **Dikembalikan** setelah proses pengembalian selesai.
+
+## Use Case Summary
+
+| Aktor | Aktivitas |
+|--------|-----------|
+| Petugas | Login, mengelola kategori, mengelola buku, mengelola siswa, melakukan transaksi peminjaman dan pengembalian, serta memantau aktivitas perpustakaan. |
+| Siswa | Memanfaatkan layanan perpustakaan dan memiliki riwayat peminjaman yang tercatat dalam sistem. |
