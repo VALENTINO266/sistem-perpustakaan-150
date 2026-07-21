@@ -65,6 +65,7 @@ Hubungan antar entitas pada sistem adalah sebagai berikut:
 
 ## Entity Relationship Diagram (Konseptual)
 
+```text
 kategori
     │
     │ 1
@@ -75,3 +76,4 @@ kategori
                         │
                         └──────────────< transaksi_peminjaman >────────────── siswa
                                                               N             1
+```
