@@ -63,7 +63,7 @@ Hubungan antar entitas pada sistem adalah sebagai berikut:
 | buku | 1 : N | transaksi_peminjaman |
 | siswa | 1 : N | transaksi_peminjaman |
 
-## Entity Relationship Diagram (Konseptual)
+## Entity Relationship Diagram 
 
 ```text
 ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
