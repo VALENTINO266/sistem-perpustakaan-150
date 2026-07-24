@@ -66,14 +66,37 @@ Hubungan antar entitas pada sistem adalah sebagai berikut:
 ## Entity Relationship Diagram (Konseptual)
 
 ```text
-kategori
-    │
-    │ 1
-    │
-    └──────────────< buku
-                        │
-                        │ 1
-                        │
-                        └──────────────< transaksi_peminjaman >────────────── siswa
-                                                              N             1
+┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
+│    PENGGUNA     │       │    TRANSAKSI    │       │      SISWA      │
+├─────────────────┤       ├─────────────────┤       ├─────────────────┤
+│ PK  id_pengguna │       │ PK  id_pinjam   │       │ PK  id_siswa    │
+│     nama_user   │──1:N─►│ FK  id_siswa    │◄─N:1──│     nama_siswa  │
+│     role        │       │ FK  id_pengguna │       │     kelas       │
+└─────────────────┘       └────────┬────────┘       └─────────────────┘
+                                   │ 1
+                                   │
+                                   ▼ N
+┌─────────────────┐       ┌─────────────────┐
+│    KATEGORI     │       │ DETAIL_TRANSAKSI│
+├─────────────────┤       ├─────────────────┤
+│ PK  id_kategori │       │ PK  id_detail   │
+│     nama_kat    │       │ FK  id_pinjam   │
+└────────┬────────┘       │ FK  id_buku     │
+         │ 1              └────────┬────────┘
+         ▼ N                       │ N
+┌─────────────────┐                │
+│  SUB_KATEGORI   │                │
+├─────────────────┤                │
+│ PK  id_sub_kat  │                │
+│ FK  id_kategori │                │
+└────────┬────────┘                │
+         │ 1                       │
+         ▼ N                       ▼ 1
+┌──────────────────────────────────────────┐
+│                   BUKU                   │
+├──────────────────────────────────────────┤
+│ PK  id_buku                              │
+│ FK  id_sub_kat                           │
+│     judul, penulis, stok_fisik           │
+└──────────────────────────────────────────┘
 ```
