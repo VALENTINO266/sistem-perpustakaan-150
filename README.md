@@ -3,7 +3,7 @@
 ## Deskripsi Singkat
 Perpustakaan SDN 150 OKU adalah aplikasi manajemen perpustakaan berbasis web yang dirancang untuk mendigitalisasi sirkulasi buku secara praktis dan efektif. Aplikasi ini menyediakan kemudahan bagi petugas dalam mengelola stok buku serta data keanggotaan siswa guna meningkatkan efisiensi layanan literasi di sekolah.
 
-## ⚠️ Temuan Masalah di Lapangan
+## Temuan Masalah di Lapangan
 1. **Pencatatan Masih Manual:** Transaksi dan data buku dicatat di buku besar, rapi tetapi berisiko hilang, robek, atau terselip.
 2. **Antrean Panjang:** Petugas harus menulis data secara manual saat peminjaman, membuat waktu pelayanan lambat.
 3. **Stok Buku Sulit Di-cek:** Siswa harus mencari ke rak secara langsung untuk mengetahui apakah buku masih tersedia atau sedang dipinjam.
